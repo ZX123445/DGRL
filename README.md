@@ -14,7 +14,7 @@ Humanoid robots have a fixed kinematic structure, yet their functional coordinat
 
 The resulting representation conditions a Proximal Policy Optimization (PPO) actor–critic controller.
 
-![Motivation and overview of DGRL](assets/figure_01.png)
+<img width="900" height="494" alt="Motivation and overview of DGRL" src="assets/figure_01.png" />
 
 *Figure 1. Contact determines relevant interactions, motion state adjusts relation strengths, and memory supplies coordination history.*
 
@@ -31,7 +31,7 @@ The resulting representation conditions a Proximal Policy Optimization (PPO) act
 
 ## Architecture
 
-![Overall DGRL architecture](assets/figure_02.png)
+<img width="900" height="513" alt="Overall DGRL architecture" src="assets/figure_02.png" />
 
 *Figure 2. Contact-conditioned graph construction, motion-dependent relation weights, GRU memory, and PPO policy learning.*
 
@@ -125,15 +125,15 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 
 ### Contact-aligned attention analysis
 
-![Temporal evolution of attention entropy](assets/figure_03.png)
+<img width="747" height="573" alt="Temporal evolution of attention entropy" src="assets/figure_03.png" />
 
 *Figure 3. Coordination entropy changes with gait phase; the plotted “sparsity” is actually a thresholded edge-density fraction, for which larger values mean more active edges.*
 
-![Body-part attention heatmaps](assets/figure_04.png)
+<img width="900" height="770" alt="Body-part attention heatmaps" src="assets/figure_04.png" />
 
 *Figure 4. Attention snapshots during double-support and single-support intervals, with corresponding kinematic traces.*
 
-![Contact-aligned relational analysis](assets/figure_05.png)
+<img width="900" height="916" alt="Contact-aligned relational analysis" src="assets/figure_05.png" />
 
 *Figure 5. Motion variables, representative edge attention, relation-weight patterns, and coordination adaptivity across gait transitions.*
 
@@ -142,7 +142,7 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 
 ## Robustness to Perturbations
 
-![Robustness across perturbation categories](assets/figure_06.png)
+<img width="900" height="920" alt="Robustness across perturbation categories" src="assets/figure_06.png" />
 
 *Figure 6. Mean completion ratio, foot-slip metric, and ZMP deviation under delay, dynamics changes, pushes, friction changes, and torque limits.*
 
@@ -222,7 +222,7 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 
 ## Real-Robot Deployment
 
-![Hardware demonstrations](assets/figure_07.png)
+<img width="900" height="462" alt="Hardware demonstrations" src="assets/figure_07.png" />
 
 *Figure 7. Qualitative real-robot sequences: (a) back kick, (b) single-leg support, (c) dialogue gestures, (d) swing leg, and (e) EricCamper.*
 
@@ -240,12 +240,12 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 
 ## Generalization and Motion Skills
 
-![Zero-shot terrain generalization](assets/figure_08.png)
+<img width="711" height="294" alt="Zero-shot terrain generalization" src="assets/figure_08.png" />
 
 *Figure 8. Qualitative transfer from flat-ground training to uneven terrain and obstacles without additional training.*
 
 
-![Diverse martial-art motion skills](assets/figure_09.png)
+<img width="708" height="408" alt="Diverse martial-art motion skills" src="assets/figure_09.png" />
 
 *Figure 9. IsaacSim demonstrations: left crescent kick, back kick, right crescent kick, and EricCamper.*
 
@@ -303,4 +303,3 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 <img width="514" height="689" alt="6f398df406d553fcaaca2fc439d5b4cf" src="https://github.com/user-attachments/assets/5aa0a84e-8ffa-49fa-a6fa-c57e17161181" />
 
 <img width="481" height="719" alt="5063a6b1e05b4f959dc8c9f6fe024182" src="https://github.com/user-attachments/assets/35c5c168-be98-4305-b9c0-b4a448202c98" />
-
