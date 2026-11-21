@@ -24,7 +24,6 @@ DGRL combines three mechanisms within a **Proximal Policy Optimization (PPO)** a
 2. **State-adaptive relation-aware reasoning:** use motion- and contact-conditioned adjacency weights together with masked attention for inter-body message passing.
 3. **Temporal coordination memory:** use a **gated recurrent unit (GRU)** to encode evolving relational context, supported by adjacency sparsity and temporal consistency regularization.
 
-> **Project status:** This package contains the project overview and its figures and tables. A training or inference implementation is **not** included in this documentation package; no installation or reproduction commands are asserted here.
 
 ## Highlights
 
@@ -203,9 +202,6 @@ DGRL/
         ├── ...
         └── table_08.png
 ```
-
-**GitHub upload:** Put `README.md` and the entire `assets/` directory at the **root of the same repository**. Keep filenames and capitalization unchanged. Uploading only `README.md` will break the image links.
-
 
 
 ## Real  Robot
