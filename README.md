@@ -137,7 +137,8 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 
 *Figure 5. Motion variables, representative edge attention, relation-weight patterns, and coordination adaptivity across gait transitions.*
 
-The observed changes in attention allocation need not imply a changing count of thresholded active edges; interaction **strength** can vary even at similar edge density.
+
+
 
 ## Robustness to Perturbations
 
