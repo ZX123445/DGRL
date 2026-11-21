@@ -208,15 +208,8 @@ DGRL/
 **GitHub upload:** Put `README.md` and the entire `assets/` directory at the **root of the same repository**. Keep filenames and capitalization unchanged. Uploading only `README.md` will break the image links.
 
 
----
-
-*All figures, tables and experimental values in this README are based on the provided study. Figure and table images are extracted from the source document, not redrawn or estimated.*
 
 ## Real  Robot
-
-*All figures, tables and experimental values in this README are based on the supplied 17-page manuscript. Figure and table images are extracted from that manuscript, not redrawn or estimated.*
-
-https://github.com/user-attachments/assets/64e01dce-ec3a-4252-92a8-76e117d188b2
 
 <img width="514" height="689" alt="92a1455d5969bca86df5cd7f3b0f2cb4" src="https://github.com/user-attachments/assets/f9861300-41f9-4de2-8c75-70733ed457ae" />
 
