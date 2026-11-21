@@ -44,7 +44,6 @@ The relation-attention implementation uses **14 body-indexed graph nodes** (pelv
 - **182 directed contact-edge candidates**, gated by predicted node activity.
 
 Thus, computation reserves **220 typed edge slots** (38 always-enabled fixed slots plus 182 contact candidates). Contact activation uses thresholded predicted node scores, rather than directly measured binary foot-contact states:
-
 $$
 p_{i,t}=\operatorname{sigmoid}(f_c(X_{i,t})),\qquad b_{i,t}=\mathbb{1}[p_{i,t}>0.5].
 $$
@@ -54,7 +53,6 @@ A contact-type edge between distinct nodes is enabled only if both endpoint scor
 ### 2. State-adaptive relational reasoning
 
 A learned adjacency gate and relation-aware attention jointly determine message strength:
-
 $$
 A_t(i,j)=\sigma\bigl(\phi_A(h_{i,t},h_{j,t},c_t,m_t)\bigr),
 $$
@@ -69,7 +67,6 @@ Invalid typed edges are excluded from attention and message aggregation. Adjacen
 ### 3. Temporal coordination memory and PPO
 
 The graph representation is processed through recurrent memory:
-
 $$
 \widetilde M_t=\operatorname{GNN}(V_t,E_t,M_{t-1}),\quad
 M_t=\operatorname{GRU}(M_{t-1},\widetilde M_t),\quad
