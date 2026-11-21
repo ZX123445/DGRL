@@ -1,6 +1,3 @@
-# DGRL
-Robot Control
-
 # Contact-Conditioned Dynamic Graph Reinforcement Learning for Humanoid Motion Control
 
 ![DGRL motivation and overview](assets/figures/figure_01.png)
@@ -20,7 +17,7 @@ Robot Control
 
 ## Overview
 
-This repository accompanies **Contact-Conditioned Dynamic Graph Reinforcement Learning for Humanoid Motion Control (DGRL)**. Humanoid motion tracking requires coordination among body parts that changes with **contact configurations and motion phases**, even though the underlying kinematic structure remains fixed. DGRL explicitly models **which body parts exchange information**, **how strongly they interact**, and **how recent coordination history affects the current action**.
+This project presents **Contact-Conditioned Dynamic Graph Reinforcement Learning for Humanoid Motion Control (DGRL)**. Humanoid motion tracking requires coordination among body parts that changes with **contact configurations and motion phases**, even though the underlying kinematic structure remains fixed. DGRL explicitly models **which body parts exchange information**, **how strongly they interact**, and **how recent coordination history affects the current action**.
 
 DGRL combines three mechanisms within a **Proximal Policy Optimization (PPO)** actor–critic framework:
 
@@ -28,7 +25,7 @@ DGRL combines three mechanisms within a **Proximal Policy Optimization (PPO)** a
 2. **State-adaptive relation-aware reasoning:** use motion- and contact-conditioned adjacency weights together with masked attention for inter-body message passing.
 3. **Temporal coordination memory:** use a **gated recurrent unit (GRU)** to encode evolving relational context, supported by adjacency sparsity and temporal consistency regularization.
 
-> **Project status:** This package contains the paper and its figures and tables. A training or inference implementation is **not** included in this documentation package; no installation or reproduction commands are asserted here.
+> **Project status:** This package contains the project overview and its figures and tables. A training or inference implementation is **not** included in this documentation package; no installation or reproduction commands are asserted here.
 
 ## Highlights
 
@@ -68,7 +65,7 @@ Values below are **mean ± standard deviation across five independent training s
 | PPO-LSTM | 49.4 ± 1.6 | 0.758 ± 0.024 | 80.8 ± 2.1 | 64.7 ± 2.3 | 0.286 ± 0.017 | 0.708 ± 0.029 |
 | Static-GCN | 54.3 ± 2.1 | 0.944 ± 0.030 | 80.0 ± 2.5 | 59.1 ± 1.9 | 0.471 ± 0.021 | 0.949 ± 0.035 |
 | GAT-PPO | 53.7 ± 1.9 | 0.766 ± 0.027 | 80.8 ± 2.2 | 56.4 ± 1.7 | 0.501 ± 0.024 | 1.105 ± 0.042 |
-| **DGRL (ours)** | **36.9 ± 1.4** | **0.563 ± 0.018** | **90.0 ± 1.8** | **56.2 ± 1.5** | **0.119 ± 0.010** | **0.676 ± 0.022** |
+| **DGRL** | **36.9 ± 1.4** | **0.563 ± 0.018** | **90.0 ± 1.8** | **56.2 ± 1.5** | **0.119 ± 0.010** | **0.676 ± 0.022** |
 
 The representative **single-seed** comparisons with policy baselines, published controllers (ExBody2, GMT and VMS), and component ablations are preserved in [Table 2](#table-2-single-seed-comparisons). DGRL does **not** lead every metric: for example, VMS has a higher success rate in the published-controller comparison, and GAT-PPO has a marginally lower unseen pose error in the representative policy-baseline run.
 
@@ -158,7 +155,7 @@ All nine figures are displayed inline below.
 
 ## All Tables
 
-All **eight tables** are embedded as **high-resolution PNG crops from the source manuscript** to preserve mathematical symbols, multi-level headers and precise alignment on GitHub. The five-seed main results are additionally provided as an accessible Markdown table above.
+All **eight tables** are embedded as **high-resolution PNG crops from the study** to preserve mathematical symbols, multi-level headers and precise alignment on GitHub. The five-seed main results are additionally provided as an accessible Markdown table above.
 
 ### Table 1. Reward parameter settings
 
@@ -197,7 +194,6 @@ All **eight tables** are embedded as **high-resolution PNG crops from the source
 ```text
 DGRL/
 ├── README.md
-├── paper.pdf
 └── assets/
     ├── figures/
     │   ├── figure_01.png
@@ -209,8 +205,12 @@ DGRL/
         └── table_08.png
 ```
 
-**GitHub upload:** Put `README.md`, `paper.pdf` and the entire `assets/` directory at the **root of the same repository**. Keep filenames and capitalization unchanged. Uploading only `README.md` will break the image links.
+**GitHub upload:** Put `README.md` and the entire `assets/` directory at the **root of the same repository**. Keep filenames and capitalization unchanged. Uploading only `README.md` will break the image links.
 
+
+---
+
+*All figures, tables and experimental values in this README are based on the provided study. Figure and table images are extracted from the source document, not redrawn or estimated.*
 
 ## Real  Robot
 
