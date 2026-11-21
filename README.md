@@ -3,9 +3,7 @@ Robot Control
 
 # Contact-Conditioned Dynamic Graph Reinforcement Learning for Humanoid Motion Control
 
-<p align="center">
-  <img src="assets/figures/figure_01.png" alt="DGRL motivation and overview" width="100%" />
-</p>
+![DGRL motivation and overview](assets/figures/figure_01.png)
 
 <p align="center">
   <strong>Contact-conditioned interaction topology · State-adaptive relation weights · Temporal coordination memory</strong>
@@ -18,6 +16,8 @@ Robot Control
   <a href="#all-figures"><b>Figures</b></a> ·
   <a href="#all-tables"><b>Tables</b></a>
 </p>
+
+> **GitHub image preview:** The `assets/` folder must be uploaded alongside `README.md` with the same directory structure. Images are embedded below using standard Markdown, not external links.
 
 ## Overview
 
@@ -41,7 +41,7 @@ DGRL combines three mechanisms within a **Proximal Policy Optimization (PPO)** a
 
 ## Method
 
-<p align="center"><img src="assets/figures/figure_02.png" width="100%" alt="DGRL overall architecture" /></p>
+![DGRL overall architecture](assets/figures/figure_02.png)
 
 *Figure 2. Overall architecture: contact-conditioned topology, state-dependent relation weights, GRU memory and PPO optimization.*
 
@@ -75,15 +75,15 @@ The representative **single-seed** comparisons with policy baselines, published 
 
 ### Contact-aligned relation analysis
 
-<p align="center"><img src="assets/figures/figure_03.png" width="85%" alt="Coordination entropy and graph edge density" /></p>
+![Coordination entropy and graph edge density](assets/figures/figure_03.png)
 
 *Figure 3. Coordination entropy across support phases and the thresholded edge-density fraction (called “sparsity” in the original plot).*
 
-<p align="center"><img src="assets/figures/figure_04.png" width="100%" alt="Relation-attention maps" /></p>
+![Relation-attention maps](assets/figures/figure_04.png)
 
 *Figure 4. Body-part attention maps at selected time steps, with motion-state traces.*
 
-<p align="center"><img src="assets/figures/figure_05.png" width="100%" alt="Contact-aligned coordination across policy architectures" /></p>
+![Contact-aligned coordination across policy architectures](assets/figures/figure_05.png)
 
 *Figure 5. Changing relational attention across gait phases and contact switches.*
 
@@ -91,7 +91,7 @@ The representative **single-seed** comparisons with policy baselines, published 
 
 DGRL is evaluated under control delay, mass/motor/inertia scaling, horizontal pushes, friction variation and torque-limit scaling. **Mean rollout completion ratio (MCR) is not the same as trial success rate**: an MCR of 1.00 indicates that the prescribed rollout horizon was executed, not necessarily stable or failure-free tracking. The paper reports metric-specific tradeoffs across ablations and perturbations; see Tables 4 and 6.
 
-<p align="center"><img src="assets/figures/figure_06.png" width="100%" alt="Robustness under dynamics perturbations" /></p>
+![Robustness under dynamics perturbations](assets/figures/figure_06.png)
 
 *Figure 6. Robustness with respect to completion ratio, foot slip and ZMP deviation.*
 
@@ -101,7 +101,7 @@ For matched event-aligned evaluations (Table 7), DGRL recovers from a **10 N pus
 
 A physical humanoid evaluation includes **30 trials** over three quantified motion tasks, with **22 successes (73.3%)**. The overall averages are **0.108 rad** joint-angle error, **3.72°** base orientation error and **0.025 m** foot slip. A passive safety tether was used for fall arrest.
 
-<p align="center"><img src="assets/figures/figure_07.png" width="100%" alt="Real robot whole body motions" /></p>
+![Real robot whole body motions](assets/figures/figure_07.png)
 
 *Figure 7. Real-robot sequence illustrations: (a) Back Kick, (b) Single-Leg Support, (c) Dialogue Gestures, (d) Swing Leg, (e) EricCamper. These illustrations are qualitative; quantitative results cover three tasks.*
 
@@ -109,29 +109,53 @@ A physical humanoid evaluation includes **30 trials** over three quantified moti
 
 The paper presents illustrative evaluation on uneven ground and obstacles after flat-ground training, as well as motion sequences in IsaacSim. These visualizations are **qualitative** and should not be interpreted as numerical benchmark results.
 
-<p align="center"><img src="assets/figures/figure_08.png" width="88%" alt="Uneven terrain and obstacle test" /></p>
+![Uneven terrain and obstacle test](assets/figures/figure_08.png)
 
 *Figure 8. Zero-shot terrain generalization examples.*
 
-<p align="center"><img src="assets/figures/figure_09.png" width="88%" alt="Sequential humanoid movement simulation" /></p>
+![Sequential humanoid movement simulation](assets/figures/figure_09.png)
 
 *Figure 9. Sequential motion demonstrations in IsaacSim.*
 
 ## All Figures
 
-All **nine original figures** from the manuscript are embedded above and listed here with direct relative-file links. GitHub renders these PNG files inline; click a figure to inspect the full-size version.
+All nine figures are displayed inline below.
 
-| Figure | Description | Image |
-|:--|:--|:--|
-| [Figure 1](assets/figures/figure_01.png) | Motivation and overview | ![](assets/figures/figure_01.png) |
-| [Figure 2](assets/figures/figure_02.png) | Overall architecture | ![](assets/figures/figure_02.png) |
-| [Figure 3](assets/figures/figure_03.png) | Coordination entropy and edge density | ![](assets/figures/figure_03.png) |
-| [Figure 4](assets/figures/figure_04.png) | Body-part attention snapshots | ![](assets/figures/figure_04.png) |
-| [Figure 5](assets/figures/figure_05.png) | Contact-aligned policy comparisons | ![](assets/figures/figure_05.png) |
-| [Figure 6](assets/figures/figure_06.png) | Dynamics perturbation robustness | ![](assets/figures/figure_06.png) |
-| [Figure 7](assets/figures/figure_07.png) | Real-world deployment | ![](assets/figures/figure_07.png) |
-| [Figure 8](assets/figures/figure_08.png) | Zero-shot terrain demonstration | ![](assets/figures/figure_08.png) |
-| [Figure 9](assets/figures/figure_09.png) | IsaacSim motion sequences | ![](assets/figures/figure_09.png) |
+### Figure 1. Motivation and overview
+
+![Figure 1 — Motivation and overview](assets/figures/figure_01.png)
+
+### Figure 2. Overall architecture
+
+![Figure 2 — Overall architecture](assets/figures/figure_02.png)
+
+### Figure 3. Coordination entropy and edge density
+
+![Figure 3 — Coordination entropy and edge density](assets/figures/figure_03.png)
+
+### Figure 4. Body-part attention snapshots
+
+![Figure 4 — Body-part attention snapshots](assets/figures/figure_04.png)
+
+### Figure 5. Contact-aligned policy comparisons
+
+![Figure 5 — Contact-aligned policy comparisons](assets/figures/figure_05.png)
+
+### Figure 6. Dynamics perturbation robustness
+
+![Figure 6 — Dynamics perturbation robustness](assets/figures/figure_06.png)
+
+### Figure 7. Real-world deployment
+
+![Figure 7 — Real-world deployment](assets/figures/figure_07.png)
+
+### Figure 8. Zero-shot terrain demonstration
+
+![Figure 8 — Zero-shot terrain demonstration](assets/figures/figure_08.png)
+
+### Figure 9. IsaacSim motion sequences
+
+![Figure 9 — IsaacSim motion sequences](assets/figures/figure_09.png)
 
 ## All Tables
 
@@ -188,24 +212,10 @@ DGRL/
 
 **GitHub upload:** Put `README.md`, `paper.pdf` and the entire `assets/` directory at the **root of the same repository**. Keep filenames and capitalization unchanged. Uploading only `README.md` will break the image links.
 
-## Authors
 
-Yuxi Zhong · Yanjiu Zhong · Handong Zheng · Qiang Zhang · Yuan Huang · Shuanfeng Xu · Yu Kang
-
-Affiliations are given in the [manuscript](paper.pdf). For correspondence, see the author details in the PDF.
-
-## Citation
-
-If you use or discuss this work, please cite the manuscript using the bibliographic metadata of the version you are referencing. A publication DOI and finalized BibTeX entry are **not specified in the supplied manuscript**.
-
-## Acknowledgements
-
-The source manuscript acknowledges support from the National Natural Science Foundation of China (72501093, 92367206), China Postdoctoral Science Foundation programs and the Fundamental Research Funds for the Central Universities of China. Full grant details appear in the [paper](paper.pdf).
-
----
+## Real  Robot
 
 *All figures, tables and experimental values in this README are based on the supplied 17-page manuscript. Figure and table images are extracted from that manuscript, not redrawn or estimated.*
-
 
 https://github.com/user-attachments/assets/64e01dce-ec3a-4252-92a8-76e117d188b2
 
