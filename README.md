@@ -193,7 +193,8 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 | μ = 0.3 | No dynamic graph | 0.75 ± 0.22 | **0.20 ± 0.02** | 4.41 ± 0.21 | 0.70 ± 0.03 |
 | μ = 0.3 | No contact-aware edges | 0.70 ± 0.26 | 0.85 ± 0.05 | **2.95 ± 0.14** | 0.76 ± 0.04 |
 
-*The advantage depends on the metric and condition; DGRL does not achieve the smallest tracking-error or foot-slip value in every row.*
+
+
 
 ### Event-aligned contact transitions and 10 N push (Table 7)
 
@@ -206,6 +207,8 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 | 10 N push | No dynamic graph | 0.24 ± 0.03 | 9.1 ± 0.7 | 1.35 ± 0.07 | 0.71 ± 0.06 | 0.92 ± 0.07 |
 | 10 N push | No contact-aware edges | 0.19 ± 0.02 | 8.0 ± 0.6 | 1.18 ± 0.06 | 0.63 ± 0.05 | 0.94 ± 0.03 |
 
+
+
 ### Contact and gait-phase cues (Table 8)
 
 | Configuration | Seen pose ↓ | SR (%) ↑ | Foot slip ↓ | ZMP deviation ↓ |
@@ -215,7 +218,7 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 | No contact or phase cue | 67.6 ± 2.5 | 80.0 ± 2.6 | 4.16 ± 0.19 | 0.71 ± 0.04 |
 | Phase cue, no contact cue | 45.2 ± 1.8 | 86.0 ± 2.0 | **3.10 ± 0.15** | 0.65 ± 0.03 |
 
-*These four configurations do not constitute a full factorial isolation of input cues and adjacency dynamics.*
+
 
 ## Real-Robot Deployment
 
@@ -232,7 +235,8 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 | Swing leg | 10 | 70.0% | 1 | 0.108 rad | 3.58° | 0.023 m | 10.0% |
 | **Overall / average** | **30** | **73.3%** | **4** | **0.108 rad** | **3.72°** | **0.025 m** | **13.3%** |
 
-The experiments use a **passive fall-arrest tether**. Tether engagement means the tether became load-bearing following a loss of balance or a safety intervention.
+
+
 
 ## Generalization and Motion Skills
 
@@ -240,9 +244,12 @@ The experiments use a **passive fall-arrest tether**. Tether engagement means th
 
 *Figure 8. Qualitative transfer from flat-ground training to uneven terrain and obstacles without additional training.*
 
+
 ![Diverse martial-art motion skills](assets/figure_09.png)
 
 *Figure 9. IsaacSim demonstrations: left crescent kick, back kick, right crescent kick, and EricCamper.*
+
+
 
 ## Training Reward Weights (Table 1)
 
