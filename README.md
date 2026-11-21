@@ -10,7 +10,6 @@ Robot Control
 </p>
 
 <p align="center">
-  <a href="paper.pdf"><b>Paper (PDF)</b></a> ·
   <a href="#method"><b>Method</b></a> ·
   <a href="#experimental-results"><b>Results</b></a> ·
   <a href="#all-figures"><b>Figures</b></a> ·
