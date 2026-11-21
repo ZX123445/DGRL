@@ -13,7 +13,6 @@
   <a href="#all-tables"><b>Tables</b></a>
 </p>
 
-> **GitHub image preview:** The `assets/` folder must be uploaded alongside `README.md` with the same directory structure. Images are embedded below using standard Markdown, not external links.
 
 ## Overview
 
