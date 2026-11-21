@@ -112,7 +112,7 @@ Values are mean ± standard deviation. Lower is better except success rate (SR).
 | VMS | 48.15 | 0.176 | 0.499 | 42.59 | **92.68** | 57.92 | 0.216 | 0.568 | 52.95 |
 | **DGRL** | **36.82** | 0.300 | 0.560 | **42.00** | 90.00 | **56.34** | **0.116** | 0.673 | **46.60** |
 
-*These are representative re-evaluations on a shared platform. The source does not provide GFLOPs/step values for the published-controller rows.*
+
 
 ### Component ablations (Table 2c)
 
